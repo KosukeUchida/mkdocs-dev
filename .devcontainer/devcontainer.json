@@ -1,0 +1,28 @@
+{
+	"name": "Python 3.12 - Mkdocs",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"mhutchie.git-graph",
+				"bierner.markdown-mermaid"
+			],
+			"settings": {
+				"python.defaultInterpreterPath": "/usr/local/bin/python",
+				"python.formatting.provider": "black",
+				"editor.formatOnSave": true
+			}
+		}
+	},
+	"forwardPorts": [],
+	"postCreateCommand": "echo 'Development container is ready!'",
+	"remoteUser": "vscode",
+	"runArgs": [
+		"--env-file",
+		".env"
+	]
+}

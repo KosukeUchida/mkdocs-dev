@@ -1,0 +1,29 @@
+site_name: My Docs
+theme:
+  name: material
+  palette:
+    scheme: default
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to dark mode
+      name_switched: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - navigation.instant
+    - navigation.sections
+    - navigation.tracking
+    - navigation.search.highlight
+    - navigation.search.suggest
+    - navigation.search.share
+    - navigation.search.suggest
+    - navigation.search.share
+    - navigation.search.suggest
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+          
